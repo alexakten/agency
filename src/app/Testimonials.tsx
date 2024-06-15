@@ -5,12 +5,12 @@ export const testimonials = [
     role: "CEO at Qura",
     imageUrl: ""
   },
-  {
-    text: "They truly understand great design.",
-    user: "Alex Wikström",
-    role: "CEO at Darwin",
-    imageUrl: ""
-  },
+  // {
+  //   text: "They truly understand great design.",
+  //   user: "Alex Wikström",
+  //   role: "CEO at Darwin",
+  //   imageUrl: ""
+  // },
   {
     text: "Professional team doing a really good job. After the first job I hired them again.",
     user: "Jan Eriksson",
