@@ -164,7 +164,7 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section className="mt-40 flex w-full max-w-4xl flex-col items-center">
+      {/* <section className="mt-40 flex w-full max-w-4xl flex-col items-center">
         <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
           Get started
         </h2>
@@ -202,7 +202,7 @@ export default function Home() {
             href={"mailto:hello@kindredlab.io"}
             className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
           >
-            {/* bg-gradient-to-tl from-gray-50 to-white */}
+
             <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-100">
               Start scaling
             </div>
@@ -218,7 +218,7 @@ export default function Home() {
             </span>
           </Link>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </main>
