@@ -18,7 +18,7 @@ export default function Home() {
         transition={{ ease: "easeInOut", duration: 0.5 }}
       > */}
       {/* Hero */}
-      <section className="z-10 mt-18 flex flex-col items-center text-center sm:mt-24">
+      <section className="z-10 mt-20 flex flex-col items-center text-center sm:mt-24">
         {/* <div className="rounded-full text-sm border px-5 opacity-75 py-1">New spots open for Q3</div> */}
 
         <h1 className="max-w-2xl text-center text-[clamp(32px,5.5vw,56px)] font-[550] leading-[1.15] tracking-tighter">
