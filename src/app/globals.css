@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://use.typekit.net/zhy0giy.css');
-
+@import url("https://use.typekit.net/zhy0giy.css");
 
 * {
   margin: 0;
@@ -11,14 +10,32 @@
 }
 
 .font-freight {
-  font-family: 'freight-text-pro', serif;
-  font-variant-ligatures: normal; /* Enables common ligatures */
+  font-family: "freight-text-pro", serif;
+  font-feature-settings:
+    "liga" 1,
+    "clig" 1,
+    "dlig" 1,
+    "hlig" 1,
+    "calt" 1;
+  font-variant-ligatures: common-ligatures discretionary-ligatures
+    historical-ligatures contextual;
+  -webkit-font-feature-settings:
+    "liga" 1,
+    "clig" 1,
+    "dlig" 1,
+    "hlig" 1,
+    "calt" 1;
+  -moz-font-feature-settings:
+    "liga" 1,
+    "clig" 1,
+    "dlig" 1,
+    "hlig" 1,
+    "calt" 1;
 }
 
 body {
   background-color: rgb(255 255 255);
   -webkit-font-smoothing: antialiased;
-
 }
 
 .marquee {
@@ -29,10 +46,13 @@ body {
   display: flex;
 }
 
-
 @keyframes scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .marquee-list {
@@ -46,10 +66,3 @@ body {
 .reverse {
   animation-direction: reverse;
 }
-
-
-
-
-
-
-
