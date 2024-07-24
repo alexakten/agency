@@ -59,8 +59,10 @@ body {
   animation: scroll 45s linear infinite;
 }
 
-.marquee-wrapper:hover .marquee-list {
-  animation-play-state: paused;
+@media (min-width: 768px) {
+  .marquee-wrapper:hover .marquee-list {
+    animation-play-state: paused;
+  }
 }
 
 .reverse {
