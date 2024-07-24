@@ -88,7 +88,7 @@ export default function Home() {
               {
                 type: "text",
                 content:
-                  "A climate tech startup tackling emissions in agriculture — ",
+                  "Climate tech startup tackling emissions in agriculture — ",
               },
               {
                 type: "link",
@@ -124,7 +124,7 @@ export default function Home() {
           <Project
             client="Payable"
             description={[
-              { type: "text", content: "A modern debt collection company. " },
+              { type: "text", content: "Modern debt collection company. " },
               // { type: "link", content: "payable.se", url: "https://www.payable.se" },
             ]}
             images={[

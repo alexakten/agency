@@ -22,7 +22,7 @@ export default function Navbar() {
         <p className="relative font-freight text-2xl font-semibold leading-[0.90] tracking-tight mix-blend-difference ">
           first
           <span className="font-medium italic">house</span>
-          {/* <span className="absolute top-1 font-regular -right-2 font-inter text-[0.5rem]">™</span> */}
+          <span className="absolute top-1 font-normal -right-2 font-inter text-[0.5rem]">™</span>
         </p>
       </div>
     </nav>
