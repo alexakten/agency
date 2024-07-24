@@ -107,7 +107,7 @@ export default function Home() {
               {
                 type: "text",
                 content:
-                  "Sustainable treatment of pollutants using microbial processes —  ",
+                  "The future for sustainable waste management —  ",
               },
               {
                 type: "link",
@@ -166,7 +166,7 @@ export default function Home() {
           <Project
             client="Stockholm Water Technology"
             description={[
-              { type: "text", content: "Sustainable water cleaning — " },
+              { type: "text", content: "Sustainable water treatment — " },
               {
                 type: "link",
                 content: "stockholmwater.se",
