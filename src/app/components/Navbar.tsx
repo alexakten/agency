@@ -19,7 +19,7 @@ export default function Navbar() {
           />
         </svg>
 
-        <p className="relative font-freight text-2xl font-semibold leading-[0.90] tracking-tight mix-blend-difference ">
+        <p className="relative font-freight text-2xl font-semibold leading-[0.90] tracking-tight">
           first
           <span className="font-medium italic">house</span>
           <span className="absolute top-1 font-normal -right-2 font-inter text-[0.5rem]">™</span>

@@ -1,64 +1,69 @@
-// "use client";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
-import Testimonial from "./components/Testimonial";
 import Pricing from "./components/Pricing";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
 import Marquee from "./components/Marquee";
-import { motion } from "framer-motion";
+import { MotionDiv } from "./components/MotionDiv";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center overflow-hidden bg-white px-3 tracking-tight sm:px-8">
-      <Navbar />
-      {/* <motion.div
-        initial={{ y: 20, opacity: 0 }}
+      <MotionDiv
+        initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeInOut", duration: 0.5 }}
-      > */}
-      {/* Hero */}
-      <section className="z-10 mt-20 flex flex-col items-center text-center sm:mt-24">
-        {/* <div className="rounded-full text-sm border px-5 opacity-75 py-1">New spots open for Q3</div> */}
+        transition={{ ease: "easeInOut", duration: 0.3 }}
+      >
+        <Navbar />
+      </MotionDiv>
 
-        <h1 className="max-w-2xl text-center text-[clamp(32px,5.5vw,56px)] font-[550] leading-[1.15] tracking-tighter">
-          We help startups <br /> raise their{" "}
-          <span className="font-freight text-[clamp(37.12px,6.38vw,64.96px)] italic">
-            next round
-          </span>
-        </h1>
-        <p className="opacity-1 mt-4 text-xl">
-          Design, UX/UI & GTM partner <br className="sm:hidden" />
-          for startups.
-        </p>
-        <div className="mt-6 flex gap-3 tracking-normal">
-          <Link
-            href={"mailto:alex@thefirsthouse.se"}
-            className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
-          >
-            {/* bg-gradient-to-tl from-gray-50 to-white */}
-            <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-50">
-              Book a call
-            </div>
-          </Link>
+      <MotionDiv
+        initial={{ y: -10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.3 }}
+      >
+        {/* Hero */}
+        <section className="z-10 mt-20 flex flex-col items-center text-center sm:mt-24">
+          {/* <div className="rounded-full text-sm border px-5 opacity-75 py-1">New spots open for Q3</div> */}
 
-          <Link
-            href={"mailto:alex@thefirsthouse.se"}
-            className="group flex items-center gap-1 rounded-full border border-white bg-white px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-50"
-          >
-            Say hello{" "}
-            <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
-              -&gt;
+          <h1 className="max-w-2xl text-center text-[clamp(32px,5.5vw,56px)] font-[550] leading-[1.15] tracking-tighter">
+            We help startups <br /> raise their{" "}
+            <span className="font-freight text-[clamp(37.12px,6.38vw,64.96px)] italic">
+              next round
             </span>
-          </Link>
-        </div>
-      </section>
+          </h1>
+          <p className="opacity-1 mt-4 text-xl">
+            Design, UX/UI & GTM partner <br className="sm:hidden" />
+            for startups.
+          </p>
+          <div className="mt-6 flex gap-3 tracking-normal">
+            <Link
+              href={"mailto:alex@thefirsthouse.se"}
+              className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
+            >
+              {/* bg-gradient-to-tl from-gray-50 to-white */}
+              <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-50">
+                Book a call
+              </div>
+            </Link>
 
-      {/* Testimonials */}
-      <section className="mt-20 flex flex-col items-center gap-4 md:px-16">
-        <Marquee />
-      </section>
-      {/* </motion.div> */}
+            <Link
+              href={"mailto:alex@thefirsthouse.se"}
+              className="group flex items-center gap-1 rounded-full border border-white bg-white px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-50"
+            >
+              Say hello{" "}
+              <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
+                -&gt;
+              </span>
+            </Link>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        <section className="mt-20 flex flex-col items-center gap-4 md:px-16">
+          <Marquee />
+        </section>
+      </MotionDiv>
 
       {/* Projects */}
       <section className=" flex w-full max-w-8xl flex-col items-center">
@@ -106,8 +111,7 @@ export default function Home() {
             description={[
               {
                 type: "text",
-                content:
-                  "The future for sustainable waste management —  ",
+                content: "The future for sustainable waste management —  ",
               },
               {
                 type: "link",
@@ -149,7 +153,10 @@ export default function Home() {
           <Project
             client="Redpoint"
             description={[
-              { type: "text", content: "Loyalty program for climbing gyms — " },
+              {
+                type: "text",
+                content: "Loyalty program for climbing gyms — ",
+              },
               {
                 type: "link",
                 content: "redpoint.top",
@@ -189,62 +196,6 @@ export default function Home() {
           />
         </div>
       </section>
-
-      {/* Pricing */}
-      {/* <section className="mt-56 flex w-full max-w-4xl flex-col items-center">
-        <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
-          Get started
-        </h2>
-        <p className="mt-4 text-xl opacity-75">Choose a pricing plan. </p>
-        <div className="mt-12 grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
-          <Pricing
-            title="Standard"
-            price="100,000 SEK"
-            included={[
-              "Branding",
-              "Copywriting",
-              "Website",
-            ]}
-            bgColor="bg-gray-100"
-            borderColor="border-gray-200"
-            textColor="text-black"
-          />
-          <Pricing
-            title="Scaleup"
-            price="250,000 SEK"
-            included={[
-              "Branding",
-              "Copywriting",
-              "Website",
-              "App Design",
-              "Content"
-            ]}
-            bgColor="bg-black"
-            borderColor="border-black"
-            textColor="text-white"
-          />
-        </div>
-        <div className="mt-12 flex gap-3 tracking-normal">
-          <Link
-            href={"mailto:hello@kindredlab.io"}
-            className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
-          >
-            <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-100">
-              Start scaling
-            </div>
-          </Link>
-
-          <Link
-            href={"mailto:hello@kindredlab.io"}
-            className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
-          >
-            Say hello{" "}
-            <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
-              -&gt;
-            </span>
-          </Link>
-        </div>
-      </section> */}
 
       <Footer />
     </main>
