@@ -4,23 +4,22 @@ import Pricing from "./components/Pricing";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
 import Marquee from "./components/Marquee";
-import { MotionDiv } from "./components/MotionDiv";
 import { Motion } from "./components/Motion";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center overflow-hidden bg-white px-3 tracking-tight sm:px-8">
       <Motion
-        initial={{ y: -10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{opacity: 0 }}
+        animate={{opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.3 }}
       >
         <Navbar />
       </Motion>
 
       <Motion
-        initial={{ y: -10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{opacity: 0 }}
+        animate={{opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.3 }}
       >
         {/* Hero */}
