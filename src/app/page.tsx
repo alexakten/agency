@@ -5,19 +5,20 @@ import Project from "./components/Project";
 import Footer from "./components/Footer";
 import Marquee from "./components/Marquee";
 import { MotionDiv } from "./components/MotionDiv";
+import { Motion } from "./components/Motion";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center overflow-hidden bg-white px-3 tracking-tight sm:px-8">
-      <MotionDiv
+      <Motion
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.3 }}
       >
         <Navbar />
-      </MotionDiv>
+      </Motion>
 
-      <MotionDiv
+      <Motion
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.3 }}
@@ -63,7 +64,7 @@ export default function Home() {
         <section className="mt-20 flex flex-col items-center gap-4 md:px-16">
           <Marquee />
         </section>
-      </MotionDiv>
+      </Motion>
 
       {/* Projects */}
       <section className=" flex w-full max-w-8xl flex-col items-center">
