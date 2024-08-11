@@ -10,20 +10,20 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center overflow-hidden bg-white px-3 tracking-tight sm:px-8">
       <Motion
-        initial={{opacity: 0 }}
-        animate={{opacity: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.3 }}
       >
         <Navbar />
       </Motion>
 
       <Motion
-        initial={{opacity: 0 }}
-        animate={{opacity: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.3 }}
       >
         {/* Hero */}
-        <section className="z-10 mt-20 flex flex-col items-center text-center sm:mt-22">
+        <section className="sm:mt-22 z-10 mt-20 flex flex-col items-center text-center">
           {/* <div className="rounded-full text-sm border px-5 opacity-75 py-1">New spots open for Q3</div> */}
 
           <h1 className="max-w-2xl text-center text-[clamp(32px,5.5vw,56px)] font-[550] leading-[1.15] tracking-tighter">
