@@ -8,6 +8,26 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "First House",
   description: "Design and development partner for startups",
+  openGraph: {
+    title: "First House",
+    description: "Design and development partner for startups",
+    url: "https://thefirsthouse.se/",
+    type: "website",
+    images: [
+      {
+        url: "https://thefirsthouse.se/thumbnail.webp",
+        width: 1200,
+        height: 630,
+        alt: "First House Thumbnail",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "First House",
+    description: "Design and development partner for startups.",
+    images: ["https://thefirsthouse.se/thumbnail.webp"],
+  },
 };
 
 export default function RootLayout({
