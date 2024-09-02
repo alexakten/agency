@@ -18,7 +18,7 @@ export default function Home() {
       >
         <Navbar />
         {/* Hero */}
-        <section className="z-10 mt-32 flex w-full max-w-4xl flex-col items-center text-center">
+        <section className="z-10 mt-24 sm:mt-32 flex w-full max-w-4xl flex-col items-center text-center">
           <div className="border-gray-150 flex items-center rounded-full border py-1 pl-2 pr-3 text-sm">
             <span className="relative flex h-3 w-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-black opacity-75"></span>
