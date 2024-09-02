@@ -38,7 +38,7 @@ export default function Home() {
           </h2>
           <div className="mt-8 flex items-center gap-3 tracking-normal">
             <Link
-              href={"mailto:alex@thefirsthouse.se"}
+              href="mailto:alex@thefirsthouse.se?subject=Demo%20Call&body=I%20would%20like%20to%20book%20a%20call."
               className="rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white hover:bg-zinc-800"
             >
               Book a call
