@@ -38,13 +38,13 @@ export default function Home() {
           </h2>
           <div className="mt-8 flex items-center gap-3 tracking-normal">
             <Link
-              href={"mailto:hello@kindredlab.io"}
+              href={"mailto:alex@thefirsthouse.se"}
               className="rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white hover:bg-zinc-800"
             >
               Book a call
             </Link>
 
-            <Link
+            {/* <Link
               href={"/work"}
               className="group flex items-center gap-1 rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium   hover:bg-gray-50"
             >
@@ -52,7 +52,7 @@ export default function Home() {
               <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
                 -&gt;
               </span>
-            </Link>
+            </Link> */}
           </div>
           <p className="mt-32 text-sm opacity-50">Trusted by teams at</p>
           <div className="mt-5">
