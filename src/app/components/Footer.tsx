@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="flex flex-col items-end gap-2">
           <Link
             className="text-black opacity-50 hover:opacity-100"
-            href={"mailto:hello@kindredlab.io"}
+            href={"mailto:alex@thefirsthouse.se"}
           >
             alex@thefirsthouse.se
           </Link>
