@@ -1,7 +1,7 @@
 export const testimonials = [
   {
     text: "After the new website launch one of our hard-to-get leads reached out. That says a lot.",
-    user: "Arvid Winterfeld",
+    user: "Arvid Winterfeldt",
     role: "CEO at Qura",
     imageUrl: "/images/profiles/arvid.png",
   },
