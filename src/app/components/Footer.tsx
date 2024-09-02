@@ -1,22 +1,28 @@
+
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="flex max-w-8xl w-full flex-col items-center justify-center pb-20 pt-12 ">
-
-      <div className="w-full my-12">
-        <div className="border-t w-full "></div>
+    <div className="flex w-full flex-col items-center justify-center pb-20 pt-12 ">
+      <div className="my-12 w-full">
+        <div className="w-full border-t "></div>
       </div>
 
-
-      <div className="flex w-full justify-between">
-        <p className="text-sm opacity-50">© 2024 First House</p>
-
-        <div className="flex flex-col gap-3 text-right font-medium">
-          <Link className="text-sm hover:underline" href={"/"}>
-            +46 70-951 38 30          </Link>
-          <Link className="text-sm hover:underline" href={"/"}>
+      <div className="flex w-full justify-between gap-2 text-sm">
+        {/* <p className="opacity-50">Designed in Stockholm</p> */}
+        <p className="opacity-50">© 2024 First House</p>
+        <div className="flex flex-col items-end gap-2">
+          <Link
+            className="text-black opacity-50 hover:opacity-100"
+            href={"mailto:hello@kindredlab.io"}
+          >
             alex@thefirsthouse.se
+          </Link>
+          <Link
+            className="text-black opacity-50 hover:opacity-100"
+            href={"tel:+46709513830"}
+          >
+            +46 70-951 38 30{" "}
           </Link>
         </div>
       </div>
